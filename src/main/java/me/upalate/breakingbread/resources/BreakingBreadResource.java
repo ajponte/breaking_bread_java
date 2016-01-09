@@ -48,5 +48,5 @@ public interface BreakingBreadResource {
                    method = RequestMethod.PUT,
                    consumes = MediaType.APPLICATION_JSON_VALUE)
    @ResponseBody
-   void updateEvent(@RequestBody(required = true) Event oldEventInfo, Event newEventInfo);
+   void updateEvent(@Valid @RequestBody(required = true) Event oldEventInfo, Event newEventInfo);
 }
